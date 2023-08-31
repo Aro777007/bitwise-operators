@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+void checkBit()
+{
+    int a = 7;
+    a = a >> 9;
+    
+
+    if ((a & 1) == 1)
+    {
+        cout << "true";
+    }
+    else if ((a & 1) == 0)
+    {
+        cout << "false";
+    }
+}
+
+int main()
+{
+    checkBit();
+}
