@@ -1,0 +1,34 @@
+#include <iostream>
+
+void moreZeroesThanOnes(int n) {
+    int Zero = 0;
+    int One = 0;
+
+    while (n > 0) {
+        if (n % 2 == 0) {
+            Zero++;
+        }
+        else {
+            One++;
+        }
+        n /= 2;
+    }
+
+    if (Zero > One) {
+        std::cout << "more 0s";
+    }
+    else if (One > Zero) {
+        std::cout << "more 1s";
+    }
+    else {
+        std::cout << "equal";
+    }
+}
+
+int main() {
+    int number = 37;
+
+    moreZeroesThanOnes(number);
+
+}
+
